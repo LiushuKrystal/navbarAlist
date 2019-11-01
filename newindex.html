@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="yangshi.css">
+</head>
+
+<body>
+
+<main>
+
+    <div class="columns">
+
+        <div id="files" class="box disabled">
+            <h2>二级标题</h2>
+            <div>
+                <nav class="navigationWrapper">
+                    <ul class="navigation">
+                        <li class="parent"><a class="link" id="node_status" href="#">导航栏项目1</a></li>
+                        <li class="parent"><a class="link" id="node_node" href="#">导航栏项目2</a></li>
+                        <li class="parent"><a class="link" id="node_file" href="#">导航栏项目3</a></li>
+                    </ul>
+                </nav>
+                <div class="input_container">
+                    <input id="hash" required="required" class="myinput"/>
+                    <button id="search_go" class="mybutton"><span>搜索</span></button>
+                </div>
+
+                <div id="node_info_container">
+                    <div id="title_container">
+                        <div id="info_addr_title">列表项1</div>
+                        <div id="info_hash_title">列表项2</div>
+                    </div>
+                    <div id="info_container">
+                        <div id="info_addr" class="addr"></div>
+                        <div id="info_hash" class="hash"></div>
+                    </div>
+                </div>
+                <div id="status_container" class="status_container">
+                    <div class="subcontainer">
+                        <div id="nodeid" class="status_name">状态值1</div>
+                        <div id="nodeid_value" class="status_value"></div>
+                    </div>
+                    <div class="subcontainer">
+                        <div id="filesize" class="status_name">状态值2</div>
+                        <div id="filesize_value" class="status_value"></div>
+                    </div>
+                    <div class="subcontainer">
+                        <div id="nodenums" class="status_name">状态值3</div>
+                        <div id="nodenums_value" class="status_value"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="handle.js"></script>
+</body>
+</html>
